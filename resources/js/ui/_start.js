@@ -8,6 +8,9 @@ require('../functions/correios');
 //--------------------[ Form Starters ]--------------------//
 require('./starters/formManipulation');
 
+//--------------------[ Script certificação ]--------------------//
+require('../functions/certificacao');
+
 //--------------------[ PayPal ]--------------------//
 require('./modules/paypal');
 

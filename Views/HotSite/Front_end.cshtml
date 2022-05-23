@@ -1,0 +1,128 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+<div class="ui container">
+    <div class="ui grid stackable middle aligned centered">
+        <div class="row one column">
+            <div class="column">
+                <h1 class="text uppercase">Front End</h1>
+                <div class="ui breadcrumb text small uppercase">
+                    <a class="section" href="/">Home</a>
+                    <div class="divider"> / </div>
+                    <span class="active section">Front End</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui container margin bottom large">
+    <div class="ui divider"></div>
+        <div class="ui grid">
+            <div class="row one column">
+                <div class="column">
+                    <div class="ui grid middle aligned center aligned">
+                        <div class="row">
+                            <div class="ten wide computer sixteen wide tablet sixteen wide mobile column">
+<form class="ui large form avaliacao"  method="post">
+    <div class="ui grid  very relaxed stackable middle aligned grid left aligned">
+        <div class="row one column">
+            <div class="column">
+                <div class="field required">
+                    <label>Nome <span id="nome-rt" class="digitado"></span></label>
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" maxlength="100" name="Name" placeholder="Nome" value="">
+                    </div>
+                </div>
+                <div class="field required">
+                    <label>E-mail <span id="email-rt" class="digitado"></span></label>
+                    <div class="ui left icon input">
+                        <i class="mail icon"></i>
+                        <input type="e-mail" maxlength="100" name="Email" placeholder="E-mail" value="">
+                    </div>
+                </div>
+                <div class="div two fields">
+                    <div class="field required">
+                        <label>Telefone <span id="tel-rt" class="digitado"></span></label>
+                        <div class="ui left icon input">
+                            <i class="phone icon"></i>
+                            <input type="text" name="Phone" placeholder="(00) 00000-0000" class="masked mask_phone" data-validate="phone">
+                        </div>
+                    </div>
+                    <div class="field required">
+                        <label>Assunto <span id="assunto-rt" class="digitado"></span></label>
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="text" maxlength="100" name="Subject" placeholder="Assunto" value="" data-validate="assunto">
+                        </div>
+                    </div>
+                </div>
+                <div class="field required">
+                    <label>Mensagem <span id="mensagem-rt" class="digitado"></span></label>
+                    <textarea maxlength="6000" name="Message"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column text right">
+            </div>
+        </div>
+        <div class="ui error message"></div>
+        <div class="row">
+            <div class="column">
+                <a href="/Home" class="ui animated button large basic left floated form_refresh">
+                    <div class="visible content">Voltar</div>
+                    <div class="hidden content">
+                        <i class="arrow left icon"></i>
+                    </div>
+                </a>
+                <button type="submit" class="ui animated button large submit primary right floated continuar avalia" tabindex="0">
+                    <div class="visible content">Enviar</div>
+                    <div class="hidden content">
+                        <i class="send icon"></i>
+                    </div>
+                </button>
+                <button type="reset" class="ui animated button large primary right floated limpar" tabindex="0">
+                    <div class="visible content">Limpar</div>
+                    <div class="hidden content">
+                        <i class="eraser icon"></i>
+                    </div>
+                </button>
+                <button class="ui animated button large primary right floated recuperar" disabled tabindex="0">
+                    <div class="visible content">Recuperar dados da sess&atilde;o</div>
+                    <div class="hidden content">
+                        <i class="save icon"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui modal formend">
+  <i class="close icon"></i>
+  <div class="header">
+    Simula&ccedil;&atilde;o de envio
+  </div>
+  <div class="image content">
+    <div class="description">
+      <div class="ui header">O que aconteceu?</div>
+      <p>Esta &eacute; uma simula&ccedil;&atilde;o do envio do formul&aacute;rio que preencheu. Os dados fornecidos foram salvos na sess&atilde;o.</p>
+      <p>Para carregar este dados, e poder editar se necess&aacute;rio, agora est&aacute; dispon&iacute;vel o bot&atilde;o "Recuperar dados da sess&atilde;o".</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui positive right labeled icon button">
+      Entendi
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
